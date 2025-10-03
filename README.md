@@ -114,7 +114,75 @@ flowchart TD
     F -->|No| I[Exit System]
     H --> I
 ```
+⚙️ Simulation Settings
 
+Both simulations allow you to adjust parameters to experiment with different scenarios.
+
+🔀 Random Seed
+
+Cafeteria Simulation: random.seed(2023)
+
+Hospital Simulation: random.seed(2024)
+
+Changing or removing the seed will produce different random outcomes each time you run the simulation. Keeping the seed fixed ensures reproducible results.
+
+📥 Arrival Rates
+
+Cafeteria:
+
+mean_arrival = 0.4 → average time between student arrivals (minutes).
+
+Hospital:
+
+mean_arrival = 3 → average time between patient arrivals.
+
+mean_call = 10 → average time between incoming calls.
+
+⏱️ Service Times
+
+Cafeteria:
+
+serving_salad = 2 minutes
+
+serving_food = 3.5 minutes
+
+serving_sandwich = 1.5 minutes
+
+Hospital:
+
+mean_registration = 2 minutes
+
+mean_consultation = 8 minutes
+
+mean_book_surgery = 4 minutes
+
+mean_answering = 4 minutes (call answering time)
+
+🧑‍🤝‍🧑 Resource Capacities
+
+Cafeteria:
+
+Salad stand = 2 servers
+
+Food stand = 4 servers
+
+Sandwich stand = 1 server
+
+Hospital:
+
+Receptionist = 1
+
+Doctor = 2
+
+⏳ Simulation Time
+
+Cafeteria: Runs for 120 minutes.
+
+Hospital: Runs for 8 hours per replication (plus a 3-hour warm-up).
+
+📝 Summary
+
+By adjusting these settings, you can explore how arrival rates, service times, resource capacities, and random seeds affect system performance. A fixed seed makes results reproducible, while changing it introduces new random variations each run. Together, these parameters allow you to experiment with different real-world scenarios and better understand how queues, resources, and randomness interact in complex systems.
 ---
 
 ## ⚙️ Requirements
