@@ -32,7 +32,7 @@ def activity_generator(env, student_id, stand_salad, stand_food, stand_sandwich,
 
             time_left_queue_sandwich = env.now
             time_in_queue_sandwich = time_left_queue_sandwich - time_entered_queue_sandwich
-            print(" \\Patient %s queued for sandwich %.2f minutes" % (
+            print(" \\Student %s queued for sandwich %.2f minutes" % (
             student_id, time_in_queue_sandwich))
             sandwich_queue.append(time_in_queue_sandwich)
 
@@ -47,7 +47,7 @@ def activity_generator(env, student_id, stand_salad, stand_food, stand_sandwich,
 
             time_left_queue_food = env.now
             time_in_queue_food = time_left_queue_food - time_entered_queue_food
-            print(" \\Patient %s queued for food %.2f minutes" % (
+            print(" \\Student %s queued for food %.2f minutes" % (
             student_id, time_in_queue_food))
             food_queue.append(time_in_queue_food)
 
@@ -62,7 +62,7 @@ def activity_generator(env, student_id, stand_salad, stand_food, stand_sandwich,
 
             time_left_queue_salad = env.now
             time_in_queue_salad = time_left_queue_salad - time_entered_queue_salad
-            print(" \\Patient %s queued for salad %.2f minutes" % (
+            print(" \\Student %s queued for salad %.2f minutes" % (
             student_id, time_in_queue_salad))
             salad_queue.append(time_in_queue_salad)
 
@@ -99,4 +99,5 @@ Mean_sandwich_queue = sum(sandwich_queue)/student_id
 
 print(f'\nMean salad queue: {Mean_salad_queue}')
 print(f'Mean food queue: {Mean_food_queue}')
+
 print(f'Mean sandwich queue: {Mean_sandwich_queue}')
